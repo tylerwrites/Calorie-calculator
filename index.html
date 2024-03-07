@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <h1>Calorie Calculator</h1>
+        <form id="calorie-form">
+            <label for="calorie-input">
+                Enter calories consumed: </label><input id="calorie-input">
+        
+          <fieldset id="early-morning">
+            <legend>Early Morning</legend>
+            <div class="input"></div>
+            </fieldset>
+          <fieldset id="morning">
+            <legend>Morning</legend>
+            <div class="input"></div>
+        </fieldset>
+          <fieldset id="early-afternoon">
+            <legend>Early Afternoon</legend>
+            <div class="input"></div>
+        </fieldset>
+          <fieldset id="afternoon">
+            <legend>Afternoon</legend>
+            <div class="input"></div>
+        </fieldset>
+          <fieldset id="early-evening">
+            <legend>Early Evening</legend>
+            <div class="input"></div>
+        </fieldset>
+          <fieldset id="evening">
+            <legend>Evening</legend>
+            <div class="input"></div>
+        </fieldset>
+          <fieldset id="night">
+            <legend>Night</legend>
+            <div class="input"></div>
+        </fieldset>
+
+
+        <label for="dropdown"> Select time of day: </label>
+        <select id="dropdown">
+            <option>Early Morning</option>
+            <option>Morning</option>
+            <option>Early Afternoon</option>
+            <option>Afternoon</option>
+            <option>Early Evening</option>
+            <option>Evening</option>
+            <option>Night</option>
+        </select>
+        <button id="calculate" type="submit">Calculate</button>
+        <button id="clear entry" type="button">Clear entry</button>
+        <button id="delete-entry" type="button">Delete entry</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+
+</html>

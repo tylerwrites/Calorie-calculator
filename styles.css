@@ -1,0 +1,27 @@
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+form {
+    border: 5px solid black;
+    margin-top: 50px;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    
+}
+
+#calorie-input {
+    
+}
+
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
