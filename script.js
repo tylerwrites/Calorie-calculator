@@ -4,6 +4,7 @@ const calculate = document.getElementById('calculate')
 const clearButton = document.getElementById('clear-entry')
 const deleteEntry = document.getElementById('delete-entry')
 const output = document.getElementById('output')
+let isError = false;
 
 function cleanInputStr (str) {
     const regex = /[+-\s]/g
@@ -26,6 +27,12 @@ function calorieEntry () {
     `;
     inputContainer.insertAdjacentHTML('beforeend', HTMLString);
 
+
+}
+
+function calorieCalculation (e) {
+    e.preventDefault();
+    isError=false;
 
 }
 
