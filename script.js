@@ -36,4 +36,47 @@ function calorieCalculation (e) {
 
 }
 
+const earlyMorningInputs = document.querySelectorAll('#early-morning [type=number]')
+const morningInputs = document.querySelectorAll('#morning [type=number]')
+const earlyAfternoonInputs = document.querySelectorAll('#early-afternoon [type=number]')
+const afternoonInputs = document.querySelectorAll('#afternoon [type=number]')
+const earlyEveningInputs = document.querySelectorAll('early-evening [type=number]')
+const eveningInputs = document.querySelectorAll('#evening [type=number]')
+const nightInputs = document.querySelectorAll('#night [type=number]')
+
+const earlyMorningCalories = getCalorieInputs(earlyMorningInputs)
+const morningCalories = getCalorieInputs(morningInputs)
+const earlyAfternoonCalories = getCalorieInputs(earlyAfternoonInputs)
+const afternoonCalories = getCalorieInputs(afternoonInputs)
+const earlyEveningCalories = getCalorieInputs(earlyEveningCalories)
+const eveningCalories = getCalorieInputs(eveningCalories)
+const nightCalories = getCalorieInputs(nightInputs)
+const recommendedCalories = getCalorieInputs(recommended)
+
+if (isError) {
+    return;
+}
+
+const totalCalories = earlyMorningCalories + morningCalories + earlyAfternoonCalories + afternoonCalories + earlyEveningCalories + eveningCalories + nightCalories
+const consumedVersusRecommended = totalCalories - recommendedCalories
+output.innerHTML = `
+    <span class="${}
+
+
+    output.classList.remove('hide');
+`
+
+
+
+
+function getCalorieInputs (list) {
+    let calories = 0;
+}
+
+for (const item of lists) {
+    const currVal = cleanInputString(item.value)
+    const invalidInputMatch = isInvalidInput(currVal)
+}
+
+
 
